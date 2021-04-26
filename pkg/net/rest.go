@@ -1,6 +1,7 @@
 package net
 
 import (
+	"fmt"
 	"net/http"
 
 	"github.com/gorilla/mux"
@@ -25,6 +26,9 @@ func (h *HttpServer) Listen() {
 	h.router.HandleFunc("/analyzer-api", h.APIHandler)
 	h.router.HandleFunc("/ping", h.PingHandler)
 
+	port := h.analyzer.Int64("http.port", 9999)
+	Infof("Http Server Listening On Port %d\n", port)
+	http.ListenAndServe(fmt.Sprintf(":%d", port), h.router)
 }
 
 func (h *HttpServer) URLHandler(w http.ResponseWriter, r *http.Request) {

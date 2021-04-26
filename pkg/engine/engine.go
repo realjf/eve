@@ -6,13 +6,14 @@ import (
 	"time"
 
 	"github.com/cheggaaa/pb"
+	"github.com/realjf/eve/pkg/nlp"
 	. "github.com/realjf/eve/terminal"
 )
 
 type Engine struct {
 	semaphore *sync.Mutex
-	// NLP       *nlp.NLPEngine
-	Ready bool
+	NLP       *nlp.NLPEngine
+	Ready     bool
 }
 
 func NewEngine() *Engine {
@@ -53,9 +54,14 @@ func (e *Engine) InitNLP() {
 	nlpOptions := nlp.NewNLPOptions(path+"data/", lang, inc)
 	nlpOptions.Serverity = nlp.ERROR
 
+	nlpEngine := nlp.NewNLPEngine(nlpOptions)
+
 	stop := time.Now().UnixNano()
 	delta := (stop - start) / (1000 * 1000)
 	initialized = true
 
 	bar.FinishPrint(fmt.Sprintf("Data loaded in %dms", delta))
+
+	e.NLP = nlpEngine
+	e.Ready = initialized
 }
