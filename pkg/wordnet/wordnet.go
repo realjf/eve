@@ -1,6 +1,7 @@
 package wordnet
 
 import (
+	. "github.com/fluhus/gostuff/nlp/wordnet"
 	. "github.com/realjf/eve/pkg/nlp"
 	. "github.com/realjf/eve/terminal"
 )
