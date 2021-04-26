@@ -50,16 +50,35 @@ func (e *Engine) InitNLP() {
 	}
 
 	start := time.Now().UnixNano()
-	//
+	// 设置nlpEngine参数
 	nlpOptions := nlp.NewNLPOptions(path+"data/", lang, inc)
 	nlpOptions.Serverity = nlp.ERROR
+	nlpOptions.TokenizerFile = "tokenizer.dat"
+	nlpOptions.SplitterFile = "splitter.dat"
+	nlpOptions.TaggerFile = "tagger.dat"
+	nlpOptions.ShallowParserFile = "chunker/grammar-chunk.dat"
+	nlpOptions.SenseFile = "senses.dat"
+	nlpOptions.UKBFile = "" //"ukb.dat"
+	nlpOptions.DisambiguatorFile = "common/knowledge.dat"
+	//
+	macoOptions := nlp.NewMacoOptions(lang)
+	macoOptions.SetDataFiles("",
+		path+"data/common/punct.dat",
+		path+"data/"+lang+"/dicc.src",
+		"",
+		"",
+		path+"data/"+lang+"/locucions-extended.dat",
+		path+"data/"+lang+"/np.dat",
+		"",
+		path+"data/"+lang+"/probabilitats.dat")
 
+	nlpOptions.MorfoOptions = macoOptions
+	// 创建nlp引擎
 	nlpEngine := nlp.NewNLPEngine(nlpOptions)
 
 	stop := time.Now().UnixNano()
 	delta := (stop - start) / (1000 * 1000)
 	initialized = true
-
 	bar.FinishPrint(fmt.Sprintf("Data loaded in %dms", delta))
 
 	e.NLP = nlpEngine
