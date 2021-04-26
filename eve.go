@@ -12,7 +12,7 @@ var logo = `
 	 |  __/\  \/  /|  __/ 
 	  \___| \____/  \___|
 
-	AdvancedLogic 2021 - v.0.1
+	realjf.io 2021 - v0.0.1
 `
 
 func init() {
