@@ -81,6 +81,8 @@ func (e *Engine) InitNLP() {
 	initialized = true
 	bar.FinishPrint(fmt.Sprintf("Data loaded in %dms", delta))
 
+	// @todo 设置wordnet
+
 	e.NLP = nlpEngine
 	e.Ready = initialized
 }
