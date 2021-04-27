@@ -3,9 +3,9 @@ package nlp
 import (
 	"container/list"
 	"regexp"
-	"strings"	"unicode"
+	"strings"
+	"unicode"
 )
-
 
 func Split(s string, sep string) []string {
 	items := strings.Split(s, sep)
@@ -20,7 +20,6 @@ func Split(s string, sep string) []string {
 	tmp := strings.Join(newItems, "~")
 	return strings.Split(tmp, "~")
 }
-
 
 func If(cond bool, trueRes interface{}, falseRes interface{}) interface{} {
 	if cond {

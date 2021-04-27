@@ -2,6 +2,9 @@ package nlp
 
 import (
 	"container/list"
+	"regexp"
+	"strconv"
+	"strings"
 
 	"github.com/fatih/set"
 )
@@ -56,10 +59,59 @@ func NewTokenizer(tokenizerFile string) *Tokenizer {
 			{
 				var substr int
 				comm := items[0]
+				substr, _ = strconv.Atoi(items[1])
+				re := items[2]
+				rul = true
 
+				for i := macros.Front(); i != nil; i = i.Next() {
+					mname := "{" + i.Value.(Pair).first.(string) + "}"
+					mvalue := i.Value.(Pair).second.(string)
+					p := strings.Index(re, mname)
+					for p > -1 {
+						re = strings.Replace(re, mname, mvalue, -1)
+						p = strings.Index(re[p:], mname)
+					}
+				}
+
+				if len(items) > 3 {
+					ci = items[3]
+				}
+
+				if ci == "CI" {
+					newre := "(?i)" + re
+					x, err := regexp.Compile(newre)
+					if err == nil {
+						this.rules.PushBack(Pair{comm, x})
+					} else {
+						LOG.Warn("Rule " + comm + " [" + newre + "] failed to be compiled")
+					}
+				} else {
+					x, err := regexp.Compile(re)
+					if err == nil {
+						this.rules.PushBack(Pair{comm, x})
+					} else {
+						LOG.Warn("Rule " + comm + " [" + re + "] failed to be compiled")
+					}
+				}
+
+				this.matches[comm] = substr
+				LOG.Trace("Stored rule " + comm + " " + re + " " + strconv.Itoa(substr))
+				break
 			}
+		case TOKENIZER_ABBREV:
+			{
+				this.abrevs.Add(line)
+				break
+			}
+		default:
+			break
 		}
 	}
 
+	LOG.Trace("analyzer successfully created")
 	return &this
+}
+
+func (this *Tokenizer) Tokenize(p string, offset int, v *list.List) {
+	// @todo
 }

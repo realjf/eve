@@ -114,7 +114,7 @@ func (this *NLPEngine) PrintList(document *models.DocumentEntity) {
 	ls := document.Sentences()
 	for l := ls.Front(); l != nil; l = l.Next() {
 		for w := l.Value.(*Sentence).Front(); w != nil; w = w.Next() {
-			item := w.Value.（*Word).getForm() + ":"
+			item := w.Value.(*Word).getForm() + ":"
 			for a := w.Value.(*Word).Front(); a != nil; a = a.Next() {
 				if a.Value.(*Analysis).isSelected(0) {
 					item += a.Value.(*Analysis).getTag()
