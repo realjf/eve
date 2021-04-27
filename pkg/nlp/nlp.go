@@ -74,6 +74,11 @@ func NewNLPEngine(options *NLPOptions) *NLPEngine {
 
 	LOG.SetMinMaxSeverity(factorlog.PANIC, options.Serverity)
 
+	if options.TokenizerFile != "" {
+		this.tokenizer = NewTokenizer(options.DataPath + "/" + options.Lang + "/" + options.TokenizerFile)
+		this.options.Status()
+	}
+
 	return &this
 }
 
@@ -99,4 +104,33 @@ func (this *NLPEngine) Workflow(document *models.DocumentEntity, output chan *mo
 	}
 
 	output <- document
+}
+
+func (this *NLPEngine) PrintList(document *models.DocumentEntity) {
+	ls := document.Sentences()
+	for l := ls.Front(); l != nil; l = l.Next() {
+		for w := l.Value.(*Sentence).Front(); w != nil; w = w.Next() {
+			item := w.Value.（*Word).getForm() + ":"
+			for a := w.Value.(*Word).Front(); a != nil; a = a.Next() {
+				if a.Value.(*Analysis).isSelected(0) {
+					item += a.Value.(*Analysis).getTag()
+				}
+			}
+			println(item)
+		}
+	}
+}
+
+func (this *NLPEngine) PrintTree(document *models.DocumentEntity) {
+	ls := document.Sentences()
+	for l := ls.Front(); l != nil; l = l.Next() {
+		tr := l.Value.(*models.SentenceEntity).GetSentence().(*Sentence).pts[0]
+		output := new(Output)
+		out := ""
+
+		output.PrintTree(&out, tr.begin(), 0)
+
+		LOG.Trace(out)
+		println(out)
+	}
 }

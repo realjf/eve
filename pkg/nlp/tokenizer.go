@@ -19,5 +19,7 @@ func NewTokenizer(tokenizerFile string) *Tokenizer {
 		matches: make(map[string]int),
 	}
 
+	cfg := NewConfigFile(false, "##")
+
 	return &this
 }
