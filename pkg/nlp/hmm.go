@@ -188,7 +188,11 @@ func NewPosTagger(r bool, f int) *POSTagger {
 }
 
 func (this *POSTagger) forceSelect(se *Sentence) {
-	// @todo
+	for w := se.Front(); w != nil; w = w.Next() {
+		i := w.Value.(*Word).selectedBegin(0).Element.Value.(*Analysis)
+		w.Value.(*Word).unselectAllAnalysis(0)
+		w.Value.(*Word).selectAnalysis(i, 0)
+	}
 }
 
 const (

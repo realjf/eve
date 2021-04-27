@@ -144,10 +144,95 @@ func (this *NLPEngine) Workflow(document *models.DocumentEntity, output chan *mo
 	content := document.Content
 
 	if url != "" && content == "" {
-
+		crawler := NewDefaultCrawler()
+		article := crawler.Analyze(url)
+		document.Title = article.Title
+		document.Description = article.MetaDescription
+		document.Keywords = article.MetaKeywords
+		document.TopImage = article.TopImage
+		document.Content = article.CleanedText
 	}
 
-	// @todo
+	body := StringsAppend(document.Title, document.Description, document.Keywords, document.Content)
+
+	if this.tokenizer != nil {
+		this.tokenizer.Tokenize(body, 0, tokens)
+	}
+
+	sentences := list.New()
+
+	if this.splitter != nil {
+		sid := this.splitter.OpenSession()
+		this.splitter.Split(sid, tokens, true, sentences)
+		this.splitter.CloseSession(sid)
+	}
+
+	for ss := sentences.Front(); ss != nil; ss = ss.Next() {
+		s := ss.Value.(*Sentence)
+		if this.morfo != nil {
+			this.morfo.Analyze(s)
+		}
+		if this.sense != nil {
+			this.sense.Analyze(s)
+		}
+		if this.tagger != nil {
+			this.tagger.Analyze(s)
+		}
+		if this.shallowParser != nil {
+			this.shallowParser.Analyze(s)
+		}
+	}
+
+	if this.dsb != nil {
+		this.dsb.Analyze(sentences)
+	}
+
+	entities := make(map[string]int64)
+
+	for ss := sentences.Front(); ss != nil; ss = ss.Next() {
+		se := models.NewSentenceEntity()
+		body := ""
+		s := ss.Value.(*Sentence)
+		for ww := s.Front(); ww != nil; ww = ww.Next() {
+			w := ww.Value.(*Word)
+			a := w.Front().Value.(*Analysis)
+
+			base := w.getForm()
+			lemma := a.getLemma()
+			pos := a.getTag()
+			props := a.getProb()
+			annotation := this.WordNet.Annotate(base, pos)
+
+			te := models.NewTokenEntity(base, lemma, pos, props, annotation)
+			if pos == TAG_NP {
+				entities[base]++
+			}
+			body += base + " "
+			se.AddTokenEntity(te)
+		}
+		body = strings.Trim(body, " ")
+		se.SetBody(body)
+		se.SetSentence(s)
+
+		document.AddSentenceEntity(se)
+	}
+
+	tempEntities := set.New(set.ThreadSafe).(*set.Set)
+
+	mitieEntities := this.mitie.Process(body)
+	for e := mitieEntities.Front(); e != nil; e = e.Next() {
+		entity := e.Value.(*models.Entity)
+		tempEntities.Add(entity.GetValue())
+	}
+
+	for name, frequency := range entities {
+		name = strings.Replace(name, "_", " ", -1)
+		if !tempEntities.Has(name) {
+			document.AddUnknownEntity(name, frequency)
+		}
+	}
+
+	document.Entities = mitieEntities
 
 	output <- document
 }

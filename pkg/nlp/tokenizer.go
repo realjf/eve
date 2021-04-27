@@ -113,5 +113,75 @@ func NewTokenizer(tokenizerFile string) *Tokenizer {
 }
 
 func (this *Tokenizer) Tokenize(p string, offset int, v *list.List) {
-	// @todo
+	var t [10]string
+	var i *list.Element
+	var match bool
+	substr := 0
+	ln := 0
+
+	v = v.Init()
+
+	cont := 0
+	for cont < len(p) {
+		for WhiteSpace(p[cont]) {
+			cont++
+			offset++
+		}
+		LOG.Trace("Tokenizing [" + p[cont:] + "]")
+		match = false
+
+		for i = this.rules.Front(); i != nil && !match; i = i.Next() {
+			LOG.Trace("Checking rule " + i.Value.(Pair).first.(string))
+			ps := strings.Index(p[cont:], " ")
+			delta := cont + ps
+			if ps == -1 {
+				delta = cont + len(p) - cont
+			}
+			results := RegExHasSuffix(i.Value.(Pair).second.(*regexp.Regexp), p[cont:delta])
+			if len(results) > 0 {
+				match = true
+				ln = 0
+				substr = this.matches[i.Value.(Pair).first.(string)]
+				for j := If(substr == 0, 0, 1).(int); j <= substr && match; j++ {
+					t[j] = results[j]
+					ln += len(t[j])
+					LOG.Trace("Found match " + strconv.Itoa(j) + " [" + t[j] + "] for rule " + i.Value.(Pair).first.(string))
+					if string(i.Value.(Pair).first.(string)[0]) == "*" {
+						lower := strings.ToLower(t[j])
+						if !this.abrevs.Has(lower) {
+							match = false
+							LOG.Trace("Special rule and found match not in abbrev list. Rule not satisfied")
+						}
+					}
+				}
+			}
+
+		}
+
+		if match {
+			if i == nil {
+				i = this.rules.Back()
+			} else {
+				i = i.Prev()
+			}
+			substr = this.matches[i.Value.(Pair).first.(string)]
+			for j := If(substr == 0, 0, 1).(int); j <= substr && match; j++ {
+				if len(t[j]) > 0 {
+					LOG.Trace("Accepting matched substring [" + t[j] + "]")
+					w := NewWordFromLemma(t[j])
+					w.setSpan(offset, offset+len(t[j]))
+					offset += len(t[j])
+					v.PushBack(w)
+				} else {
+					LOG.Trace("Skipping matched null substring [" + t[j] + "]")
+				}
+			}
+			cont += ln
+		} else if cont < len(p) {
+			LOG.Warn("No rule matched input substring" + p[cont:] + " . Character " + string(p[cont:][0]) + " skipped . Check your tokenization rules")
+			cont++
+		}
+	}
+
+	offset++
 }
