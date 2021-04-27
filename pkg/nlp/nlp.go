@@ -2,6 +2,7 @@ package nlp
 
 import (
 	"container/list"
+	"strings"
 
 	"github.com/fatih/set"
 	"github.com/kdar/factorlog"
@@ -79,7 +80,48 @@ func NewNLPEngine(options *NLPOptions) *NLPEngine {
 		this.options.Status()
 	}
 
-	// @todo
+	if options.SplitterFile != "" {
+		this.splitter = NewSplitter(options.DataPath + "/" + options.Lang + "/" + options.SplitterFile)
+		this.options.Status()
+	}
+
+	if options.MorfoOptions != nil {
+		this.morfo = NewMaco(options.MorfoOptions)
+		this.options.Status()
+	}
+
+	if options.SenseFile != "" {
+		this.sense = NewSenses(options.DataPath + "/" + options.Lang + "/" + options.SenseFile)
+		this.options.Status()
+	}
+
+	if options.TaggerFile != "" {
+		this.tagger = NewHMMTagger(options.DataPath+"/"+options.Lang+"/"+options.TaggerFile, true, FORCE_TAGGER, 1)
+		this.options.Status()
+	}
+
+	if options.ShallowParserFile != "" {
+		this.grammar = NewGrammar(options.DataPath + "/" + options.Lang + "/" + options.ShallowParserFile)
+		this.shallowParser = NewChartParser(this.grammar)
+		this.options.Status()
+	}
+
+	if options.UKBFile != "" {
+		this.dsb = NewUKB(options.DataPath + "/" + options.Lang + "/" + options.UKBFile)
+		this.options.Status()
+	}
+
+	if options.DisambiguatorFile != "" {
+		if strings.HasPrefix(options.DisambiguatorFile, "common") {
+			this.disambiguator = NewDisambiguator(options.DataPath + "/" + options.DisambiguatorFile)
+		} else {
+			this.disambiguator = NewDisambiguator(options.DataPath + "/" + options.Lang + "/" + options.DisambiguatorFile)
+		}
+		this.options.Status()
+	}
+
+	this.mitie = NewMITIE(options.DataPath + "/" + options.Lang + "/mitie/ner_model.dat")
+	this.options.Status()
 
 	return &this
 }
