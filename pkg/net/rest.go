@@ -11,6 +11,10 @@ import (
 	. "github.com/realjf/eve/terminal"
 )
 
+type reqBody struct {
+	Content string
+}
+
 type HttpServer struct {
 	router   *mux.Router
 	analyzer *Analyzer

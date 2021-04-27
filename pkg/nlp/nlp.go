@@ -2,6 +2,7 @@ package nlp
 
 import (
 	"container/list"
+	"os"
 	"strings"
 
 	"github.com/fatih/set"
@@ -26,7 +27,9 @@ const (
 )
 
 func init() {
-
+	frmt := `%{Color "red" "ERROR"}%{Color "yellow" "WARN"}%{Color "green" "INFO"}%{Color "cyan" "DEBUG"}%{Color "blue" "TRACE"}[%{Date} %{Time}] [%{SEVERITY}:%{File}:%{Line}] %{Message}%{Color "reset"}`
+	LOG = factorlog.New(os.Stdout, factorlog.NewStdFormatter(frmt))
+	LOG.SetMinMaxSeverity(factorlog.PANIC, factorlog.TRACE)
 }
 
 type NLPOptions struct {
