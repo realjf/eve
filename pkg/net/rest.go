@@ -1,11 +1,13 @@
 package net
 
 import (
+	"encoding/json"
 	"fmt"
 	"net/http"
 
 	"github.com/gorilla/mux"
 	. "github.com/realjf/eve/pkg/lib"
+	"github.com/realjf/eve/pkg/models"
 	. "github.com/realjf/eve/terminal"
 )
 
@@ -21,25 +23,54 @@ func NewHttpServer(analyzer *Analyzer) *HttpServer {
 	return instance
 }
 
-func (h *HttpServer) Listen() {
-	h.router.HandleFunc("/analyzer", h.URLHandler)
-	h.router.HandleFunc("/analyzer-api", h.APIHandler)
-	h.router.HandleFunc("/ping", h.PingHandler)
+func (this *HttpServer) Listen() {
+	this.router.HandleFunc("/analyzer", this.URLHandler)
+	this.router.HandleFunc("/analyzer-api", this.APIHandler)
+	this.router.HandleFunc("/ping", this.PingHandler)
 
-	port := h.analyzer.Int64("http.port", 9999)
+	port := this.analyzer.Int64("http.port", 9999)
 	Infof("Http Server Listening On Port %d\n", port)
-	http.ListenAndServe(fmt.Sprintf(":%d", port), h.router)
+	http.ListenAndServe(fmt.Sprintf(":%d", port), this.router)
 }
 
-func (h *HttpServer) URLHandler(w http.ResponseWriter, r *http.Request) {
+func (this *HttpServer) URLHandler(w http.ResponseWriter, r *http.Request) {
+	params := r.URL.Query()
+	url := params.Get("url")
+	document := new(models.DocumentEntity)
+	document.Url = url
 
+	this.DocumentHandler(document, w)
 }
 
-func (h *HttpServer) APIHandler(w http.ResponseWriter, r *http.Request) {
+func (this *HttpServer) APIHandler(w http.ResponseWriter, r *http.Request) {
+	decoder := json.NewDecoder(r.Body)
+	var body reqBody
+	err := decoder.Decode(&body)
+	if err != nil {
+		panic(err)
+	}
+	defer r.Body.Close()
 
+	document := new(models.DocumentEntity)
+	document.Content = body.Content
+
+	this.DocumentHandler(document, w)
 }
 
-func (h *HttpServer) PingHandler(w http.ResponseWriter, r *http.Request) {
+func (this *HttpServer) DocumentHandler(document *models.DocumentEntity, w http.ResponseWriter) {
+	output := this.analyzer.AnalyzeText(document)
+
+	js := output.ToJSON()
+	b, err := json.Marshal(js)
+
+	if err != nil {
+		w.Write([]byte(fmt.Sprintf("%s\n", err.Error())))
+	} else {
+		w.Write([]byte(fmt.Sprintf("%s\n", string(b))))
+	}
+}
+
+func (this *HttpServer) PingHandler(w http.ResponseWriter, r *http.Request) {
 	Infoln("pong")
 	w.Write([]byte("pong"))
 }

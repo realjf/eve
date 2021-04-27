@@ -7,6 +7,7 @@ import (
 
 	"github.com/cheggaaa/pb"
 	"github.com/realjf/eve/pkg/nlp"
+	"github.com/realjf/eve/pkg/wordnet"
 	. "github.com/realjf/eve/terminal"
 )
 
@@ -81,7 +82,9 @@ func (e *Engine) InitNLP() {
 	initialized = true
 	bar.FinishPrint(fmt.Sprintf("Data loaded in %dms", delta))
 
-	// @todo 设置wordnet
+	// 设置wordnet
+	wn := wordnet.NewWordNet()
+	nlpEngine.WordNet = wn
 
 	e.NLP = nlpEngine
 	e.Ready = initialized
