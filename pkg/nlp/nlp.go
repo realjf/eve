@@ -79,6 +79,8 @@ func NewNLPEngine(options *NLPOptions) *NLPEngine {
 		this.options.Status()
 	}
 
+	// @todo
+
 	return &this
 }
 
@@ -102,6 +104,8 @@ func (this *NLPEngine) Workflow(document *models.DocumentEntity, output chan *mo
 	if url != "" && content == "" {
 
 	}
+
+	// @todo
 
 	output <- document
 }
