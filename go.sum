@@ -1,3 +1,7 @@
+github.com/abiosoft/semaphore v0.0.0-20180811165425-cb737ff681bd h1:uk27QHZe1wdJe0GinLEzM4j9SFnHRch7yjvBe70YnJ4=
+github.com/abiosoft/semaphore v0.0.0-20180811165425-cb737ff681bd/go.mod h1:Kqn7/fS2RMB9yaSd1KegoEtuugHW0P9Ia/cJyAmECNw=
+github.com/advancedlogic/go-freeling v0.0.0-20190816150524-d4c3d0731524 h1:kBwwhk1JEEGSQeTLSsPQaIdCrJ0Ic6IeslSCpzdQ6Bo=
+github.com/advancedlogic/go-freeling v0.0.0-20190816150524-d4c3d0731524/go.mod h1:xD5QalIaXPLYEJwmWK7XDJuUTJK7dW/eYu2KRF5Ev80=
 github.com/cheggaaa/pb v1.0.29 h1:FckUN5ngEk2LpvuG0fw1GEFx6LtyY2pWI/Z2QgCnEYo=
 github.com/cheggaaa/pb v1.0.29/go.mod h1:W40334L7FMC5JKWldsTWbdGjLo0RxUKK73K+TuPxX30=
 github.com/fatih/color v1.9.0/go.mod h1:eQcE1qtQxscV5RaZvpXrrb8Drkc3/DdQ+uUYCNjL+zU=

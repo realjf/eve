@@ -1,14 +1,14 @@
 package nlp
 
 import (
-	"container/list"	"io/ioutil"
+	"container/list"
+	"io/ioutil"
 	"math"
 	"regexp"
 	"sort"
 	"strconv"
 	"strings"
 )
-
 
 const VERTEX_NOT_FOUND = -1
 const RE_WNP = "^[NARV]"
@@ -344,4 +344,3 @@ func (this *UKB) Analyze(ls *list.List) {
 	this.wn.pageRank(pv)
 	this.extractRanksToSentences(ls, pv)
 }
-
