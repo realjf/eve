@@ -71,8 +71,8 @@ import (
 	"unsafe"
 
 	"github.com/abiosoft/semaphore"
-	"github.com/advancedlogic/go-freeling/models"
 	"github.com/fatih/set"
+	"github.com/realjf/eve/pkg/models"
 )
 
 type MITIE struct {
