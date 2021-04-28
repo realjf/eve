@@ -47,3 +47,15 @@ http://localhost:9999/analyzer-api
     content: 'Text you want to analyze'
 }
 ```
+
+### 数据下载
+链接：https://pan.baidu.com/s/1QFiPvc7vCsqEL6bApMy3eg 
+提取码：wh59 
+
+
+
+链接：https://pan.baidu.com/s/1gpaPk483cwKfTVSwbxipIg 
+提取码：tihi 
+
+
+下载后放入根目录下的data目录下
