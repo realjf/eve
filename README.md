@@ -24,6 +24,8 @@ git clone https://github.com/mit-nlp/MITIE
 cd MITIE
 make
 cp mitielib/libmitie.so /usr/lib/
+# 更新/etc/ld.so.cache
+ldconfig
 
 # 构建本项目
 go build eve.go
