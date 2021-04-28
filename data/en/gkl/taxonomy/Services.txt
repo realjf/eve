@@ -1,0 +1,156 @@
+emergency service
+ambulance
++stretcher
++paramedic
+police
++badge
++uniform
++truncheon
++gun
+police officer
++handcuffs
++inspector
++detective
++crime
++burglary
++assault
++fingerprint
++suspect
++charge
+police cell
++arrest
+police car
+police station
+fire brigade
+fire fighter
++cradle
++smoke
++hose
++helmet
++fire
+fire station
+fire escape
+fire engine
++smoke alarm
+fire alarm
++axe
+fire exstinguisher
++hydrant
++ladder
++cab
+bank
++customer
++window
++cashier
++debit card
++credit card
+bank manager
+chequebook
++cheque
++amount
+paying-in-slips
++signature
++counter
++leaflets
++savings
++mortgage
++payment
++pay tv
++tax
++overdraft
++loan
++pin number
++savings account
++direct debit
++interest rate
++bank transfer
++coin
++money
++note
++key pad
++screen
++bureau de change
++exchange rate
++traveller's cheque
++finance
++financial advisor
++stock exchange
++cash
++shares
++denomination
++divindends
++card slot
+cash machine
++commission
++accountant
++equity
++stocks
++portfolio
++investiment
++share price
++stockbroker
+communications
+postal worker
+post office
+postman
++stamp
++envelope
++address
++letter
++return address
++delivery
++fragile
+by airmail
++postage
++mailbag
++this way up
++registered post
++collection
++postal order
++telegram
++fax
+postbox
+letterbox
+parcel
+courier
++handset
++base station
++cordless phone
+answering machine
++video phone
++mobile phone
++coin return
++coin phone
+telephone box
+card phone
++dial
++answer
++operator
++disconnected
++reverse charge call
++directory inquiries
++text message
++voice message
+hotel
++guest
++room key
++message
++pigeonhole
++receptionist
++register
++counter
++porter
++trolley
++luggage
++room number
+single room
+double room
+twin room
+private bathroom
+maid service
+laundry service
+room service
+mini bar
++restaurant
++gym
++swimming pool

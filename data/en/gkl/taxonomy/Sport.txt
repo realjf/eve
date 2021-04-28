@@ -1,0 +1,706 @@
+Baseball
+Basketball
+Batting average
+Benched
+Birdie
+Catcher
+Championship
+Cleats
+Coach
+Courtside
+cricket
+Draft pick
+ERA
+Fastball
+Fitness
+Football
+Foul ball
+Free throw
+Free-agent
+Goalie
+Goalkeeper
+Goalpost
+Golfer
++hole
+Homerun
+Inning
+Interception
+Kick off
+Kicker
+Laps
+Lineman
+Lineup
++masters
+Midfielder
+Minigolf
+Olympic Games
+Playbook
+Playoffs
+Points
+Putter
+Puck
+Putt
+Quarterback
+Racquet
+Scoreboard
+Scrimmage
+Shortstop
+Sideline
+Softball
+Sparring
+sport
+Squads
+Starter
+Strike out
+Strikes
+Swimmer
+Swimming
+synchronised swimmer
+synchronised swimming
++team
+Teammate
+Touchdown
+Tournament
+Tryouts
+Umpire
+Volley
+World series
+soccer
+tennis
+FIFA
+World Cup
+UEFA
+footbal federation
++career
++final
++match
++qualification
++committee
++win
+playoff
++player
+stadium
++playscudetto
+champions league
++competition
+english premier league
+europa league
+Champions League
+premier league
+vespa
++catch
++dribble
++throw
++jog
++catch
++compete
++draw
++lose
++play
++race
++ride
++run
++score
++sprint
++tackle
++sideline
+basketball
++referee
++centre circle
+free-throw line
++endline
++court
++centreline
+three-point line
++ball
++net
++hoop
++number
++backboard
++foul
++throw-in
++rebound
++out of bounds
++pass
++jump ball
++throw
++catch
++shoot
++jump
++mark
++block
++bounce
++dunk
+wicket
+batsman
+crease
++boundary line
+bowler
++bat
++bowl
++field
+wicket keeper
++stump
++pitch
++face mask
++legpad
++scoreboard
+cricket
+goalpost
+sideline
+line judge
+goal line
+football player
++boot
++pads
+football
+tackle
++pass
++catch
+end zone
++helmet
++time out
++team
++defence
+cheerleader
+touchdown
++score
++attack
++fumble
+quarterback
+hockey
+ice hockey
++neutral zone
++defending zone
++goalkeeper
++goal
+face-off circle
++centre circle
++glove
++stick
++pad
+ice-skate
+ice skate
+hockey stick
++ball
++skate
+ice hockey player
++player
++hit
++goal
++in-goal area
+touch line
++flag
+dead ball line
++ball
+rugby pitch
+rugby
++throw
++kick
+rugby strip
++pass
+ruck
++player
++try
++scrum
++football
++goalkeeper
++football strip
++footballer
+goalpost
++net
++crossbar
++dribble
++head
+free kick
+football pitch
+centre circle
++referee
++forward
+soccer
+goal line
+penalty area
+penalty
+linesman
+corner flag
++goal
++throw-in
++kick
++pass
++shoot
++save
++tackle
++stadium
++foul
++yellow card
+league
++sobstitute
+score a goal
+send off
+off-side
++draw
++red card
++extra time
++half time
+volleyball
++block
++referee
++knee support
++net
++dig
++court
+baseball
++field
++left field
++infield
++centre field
++outfield
++right field
++foul line
++baseman
++batter
+ining
++run
++safe
++out
++strike
++mitt
++mask
++catcher
+pitcher
+dogout
++team
+home plate
+pitcher's mound
++throw
++catch
++run
++pitch
++umpire
++bat
++play
+tennis
++handle
++head
++string
++umpire
+service line
++racquet
++ball
++whistband
++singles
++doubles
++game
++set
++match
++tiebreak
++love
++fault
++ace
++dropshot
++slice
++rally
++let
++spin
++top spin
++championship
++linesman
++baseline
++net
++ballboy
++serve
+tennis shoes
++player
++smash
++volley
++lob
++return
++backhand
++forehand
+racquet game
+shuttlecock
+badminton
+table tennis
++squash
+racquetball
+golf
++hole
++teeing ground
++green
++bunker
++flag
++rough
++water hazard
++fairway
++swing
+golfer
+clubhouse
+golf course
++buggy
+golf ball
++glove
+golf trolley
+golf shoe
++spikes
+golf bag
++umbrella
+golf club
++wood
++putter
++iron
++wedge
++tee-off
++drive
++putt
++chip
++shot
++winner
++performance
++champion
+par
+over par
++handicap
+caddy
++stroke
+backswing
++line of play
+under par
++hole in one
++tournament
++spectators
++practice swing
++lane
+athletics
++track
++finishing line
++starting line
++starting block
++starting blocks
+sprinter
++discus
+athlete
+shotput
+javelin
++race
++record
++photo finish
+pole vault
++time
++break a record
++break the record
++personal best
+marathon
+olympic games
+olypics
+gymnastics
+gym
++horse
++vault
++somesault
++springboard
+gymnast
++bream
++ribbon
+floor exercises
++tumble
+rhythmic gymnastics
++horizontal bar
++asymmetric bars
++rings
++medals
++silver
++parallel bars
++pommel horse
++podium
++gold
++bronze
++combat
+combat sport
++opponent
++glove
++guard
++belt
+karate
+judo
+tae-kwon-do
+kravmaga
+aikido
+kendo
+kung fu
+kickboxing
+wrestling
+boxing
++fall
++hold
++throw
++pin
++kick
++punch
++strike
++jump
++block
++chop
+boxing ring
++round
++fist
++black belt
++self defence
+sumo wrestling
++mouth guard
++sparring
++punch bag
+martial arts
+tai-chi
+rock climbin
+abseiling
+parachuting
+paragliding
+bungee jumping
+hang-gliding
+rally driving
+motor racing
+motor race
+motorcross
+motorbike
+motorbike racing
+skateboard
+skateboarding
+roller skate
+roller skating
+lacrosse
+fencing
+target shooting
+archery
++pin
+bowling
+pool
+snooker
+fitness
+gym machine
++bench
++free weights
++gym
+treadmill
+cross trainer
+rowing machine
+personal trainer
+step machine
+swimming pool
+sauna
+stretch
+lunge
++tights
++press-up
++squat
+sit-up
+bicep curl
+leg press
+chest press
+weight training
+jogging
+aerobics
++train
+jog on the spot
++extend
+pilates
+circuit training
++warm up
++flex
++pull up
+boxercise
++skipping
+skiing
+ski
+ski slope
++chairlift
++cable car
+ski suit
++glove
+ski run
++safety barrier
+ski pole
+ski boot
++edge
+skier
++tip
+downhill skiing
++downhill
++slalom
+ski jump
+cross-country skiing
+ice climbing
+ice-skating
+figure skating
+snowboard
+snowboarding
+bobsleigh
+luge
+snowmobile
+sleeding
++avalanche
+alpine skiing
+off-piste
++curling
+biathlon
+giant slalom
+dog sledding
+speed skating
+fishing
++barb
+fishhook
++eye
++weight
++float
++bait
++fly
++landing net
++tackle box
++line
+fishing rod
++reel
++waders
++keep net
+freshwater fishing
+fly fishing
+sport fishing
+deep sea fishing
+surfcasting
++release
++net
++reel in
++catch
++cast
++bait
++bite
++spool
++tackle
++waterproofs
++pole
+marine fishing
+spearfishing
+fishing permit
++horse
+horse riding
+riding hat
++rider
++saddle
++tail
+riding boot
++stirrup
++girth
+jodhpurs
++reins
++mane
++seat
+horsehoe
++side-saddle
+riding crop
++browband
++noseband
++bit
+racehorse
+rodeo
+steeplechase
+harness race
+showjumping
+carriage race
++trekking
+dressage
++polo
++walk
++gallop
++jump
++halter
++paddock
++racecourse
++trot
++canter
++groom
++stable
++arena
++flat race
+sailing
++compass
++anchor
++mast
++rigging
+mainsail
++boom
++stern
++bow
++tiller
++hull
++cleat
++sidedeck
++flare
+lifebuoy
+life jacket
+life raft
++rower
++oar
++row
++paddle
+canoeing
++sail
+windsurfer
++board
++footstrap
++surfing
+surfboard
+waterskiing
+rafting
+speed boating
+ket skiing
+surfer
++crew
++wind
++rapids
++sheet
++tack
+waterskier
++centreboard
++wave
++surf
++rudder
++capsize
+swimming
++nose clip
++goggles
++armband
++float
+swimsuit
++lane
++water
++starting block
+swimming pool
++trunks
+swimmer
++springboard
++diver
++dive
+swim
++turn
+front crawl
+breastroke
++stroke
+backstroke
++butterfly
+scuba diving
++wetsuit
++flipper
++weight belt
++regulator
++mask
++snorkel
++air cylinder
+high dive
++lockers
+water polo
++shallow end
++cramp
+racing dive
++tread water
+lifeguard
++deep end
+synchronized swimming
++drown

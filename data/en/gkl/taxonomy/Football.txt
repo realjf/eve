@@ -1,0 +1,22 @@
+goalpost
+sideline
+line judge
+goal line
+football player
++boot
++pads
+football
+tackle
++pass
++catch
+end zone
++helmet
++time out
++team
++defence
+cheerleader
+touchdown
++score
++attack
++fumble
+quarterback

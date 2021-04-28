@@ -1,0 +1,392 @@
+road
+motorway
+toll both
+road markings
+slip road
+one-way
++divider
++junction
+traffic light
+inside lane
+middle lane
+outside lane
+exit ramp
+traffic
+flyover
+hard shoulder
+underpass
+lorry
+le terre-plein
+pedestrian crossing
+emergency phone
+disabled parking
+traffic jam
++map
+parking meter
+traffic policeman
+roundabout
++diversion
++overtake
+roadworks
++park
+dual carriageway
+tow away
++reverse
++drive
++no entry
++speed limit
++hazard
++no stopping
++no right turn
+bus
+driver's seat
++handrail
++automatic door
++front wheel
++luggage hold
++rear wheel
++window
++stop button
++bell
+bus stop
+bus station
++fare
+bus shelter
++timetable
++wheelchair access
+double-decker bus
+tram
++route number
++driver
+trolley bus
+school bus
+tourist bus
+shuttle bus
+minibus
+car
+wing mirror
+windscreen
+le retroviseur
+windscreen wiper
++door
++boot
++indicator
++licence plate
++bumper
++headlight
++wheel
++tyre
+roofrack
++tailgate
++seat belt
++child seat
+small car
+hatchback
++saloon
++estate
++convertible
+sports car
+people carrier
+four-wheel drive
++vintage
+limousine
+petrol pump
++price
++forecourt
++air supply
++oil
++leaded
+car wash
++petrol
++diesel
++antifreeze
++unleaded
++garage
++screenwash
++back seat
++armrest
++headrest
++door lock
++handle
++two-door
++four-door
++automatic
++brake
++accelerator
++gas
++pedal
++three door
++manual
++ignition
++clutch
++air conditioning
++steering wheel
++horn
++dashboard
++hazard lights
++satellite navigation
+left-hand drive
++temperature gauge
+rev counter
++speedometer
++fuel gauge
++light switch
++odometer
++air bag
++right-hand drive
++gearstick
+car stereo
+screen wash reservoir
+dipstick
++air filter
+brake fluid reservoir
++bodywork
++battery
+coolant reservoir
+cylinder head
++pipe
++sunroof
++radiator
++fan
++engine
++hubcap
++gearbox
++transmission
+driveshaft
++roof
++wrench
++wheel nut
++jack
++silencer
++suspension
++exhaust pipe
+car accident
++breakdown
++turbocharger
++insurance
++timing
++tow truck
++chassis
++mechanic
++handbrake
++spark plug
++alternator
++cam belt
++tyre pressure
++fan belt
++petrol tank
+motorbike
++indicator
++controls
++throttle
++reflector
++tail light
++mudguard
+racing bike
+tourer
+dirt bike
+scooter
+bicycle
++tandem
+racing bike
+mountain bike
+touring bike
+road bike
++saddle
++seat post
++frame
++gear
++hub
++chain
++cog
++brake lever
++crossbar
++sprocket
++kickstand
++brake block
+train
++carriage
++platform
++trolley
++platform number
++commuter
+train station
+steam train
+driver's cab
++rail
+electric train
+high-speed train
+monorail
+undergroung train
+tram
+freight train
+luggage rack
++track
+public address system
++concourse
+ticket barrier
+dining car
+sleeping compartment
+rail network
++delay
++ticket office
+live rail
++signal
+ticket inspector
+inter-city train
++rush hour
++emergency lever
+aircraft
+airline
+airliner
++nose
++cockpit
++fuselage
++wing
++tail
++rudder
++tailplane
++fin
++aileron
+landing gear
+nosewheel
++emergency exit
++aisle
++air vent
++flight attendant
+hot-hai balloon
+microlight
+glider
+biplane
+plane
+airplane
+military plane
+transport
+aircraft
+airport
+sea plane
+light aircraft
+supersonic jet
++jet
+private jet
++rotor blade
+helicopter
+bomber
+fighter plane
++missile
++pilot
++take off
++land
+economy class
+hand luggage
+co-pilot
++fly
++flight
++altitude
+business class
++seat belt
+airport
++apron
+baggage trailer
++terminal
+service vehicle
++vehicle
++walkway
++runway
+flight numnber
++carousel
++holiday
++connection
++immigration
++security
++book
+international flight
+excess baggage
+control tower
++visa
+boarding pass
++passport
+check-in desk
++arrivals
++departures
+departure lounge
++information screen
+taxi rank
+car hire
+baggage claim
+baggage reclaim
+duty-free shop
+ship
++prow
+plimsoll line
+porthole
+hull
+lifeboat
+keel
+propeller
+quarterdeck
+funnel
++deck
++radio antenna
++radar
++bridge
++engine room
++cabin
++dock
++windlass
++captain
++speedboat
+rowing boat
+canoe
+bollard
++gangway
++port
+ferry
+inflatable dinghy
+hydrofoil
+hovercraft
+tug boat
+catamaran
+yacht
+container ship
+sailboat
+freighter
+oil tanker
+aircraft carrier
+battleship
+submarine
+conning tower
+fregate
++warehouse
++crane
++fork-lift truck
+access road
++customs house
++container
++quay
++cargo
+ferry terminal
+container port
++net
+fishing boat
++mooring
++marina
+harbour
+fishing port
++pier
++jetty
+shipyard
+lighthouse
+buoy
+coastguard
+drop anchor
++board
+harbour master
++disembark
++moor
+dry dock
+set sail
+automaker
+gas pedal
+compact car
+ignition switch

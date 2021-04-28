@@ -1,0 +1,30 @@
+baseball
++field
++left field
++infield
++centre field
++outfield
++right field
++foul line
++baseman
++batter
+ining
++run
++safe
++out
++strike
++mitt
++mask
++catcher
+pitcher
+dogout
++team
+home plate
+pitcher's mound
++throw
++catch
++run
++pitch
++umpire
++bat
++play

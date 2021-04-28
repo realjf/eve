@@ -1,0 +1,21 @@
+#TRL-9
+@all
+
++design stable
++system installed & deployed
++system installed and deployed
++system fully demonstrated
++full system demonstration
++training plan implemented
++training plan implementation
++supportability plan implemented
++supportability plan implementation
++program protection plan implemented
++program protection plan implementation
++operational test & evaluation complete
++operational test and evaluation complete
++operational test & evaluation completed
++operational test and evaluation completed
++6-Sigma quality level
++6-Sigma
++stable production

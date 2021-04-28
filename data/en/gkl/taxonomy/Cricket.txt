@@ -1,0 +1,15 @@
+wicket
+batsman
+crease
++boundary line
+bowler
++bat
++bowl
++field
+wicket keeper
++stump
++pitch
++face mask
++legpad
++scoreboard
+cricket

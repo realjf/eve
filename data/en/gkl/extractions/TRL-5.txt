@@ -1,0 +1,43 @@
+#TRL-5
+@all
+
++cross-technology effect identified
++pre-production hardware
++system interface requirements
++system interface requirement
++targets for improved yield
++key manufacturing processes
++key manufacturing process
++engineering and design changes
++engineering and design change
++prototypes created
++prototype created
++tooling & machining lab demonstration
++simulated environment tests
++simulated environment test
++high-fidelity lab integration
++brassboard
++system mock-up
++quality target levels
++quality target level
++reliability target levels
++reliability target level
++three-view drawings
++three-view drawing
++system engineering master plan
++System Engineering Master Plan
++SEMP
++risk management plan documented
++configuration management
++draft test & evaluation master plan
++draft test and evaluation master plan
++draft Test & Evaluation Master Plan
++draft Test and Evaluation Master Plan
++draft TEMP
++hardware technology system engineering report
++business case
++life-cycle cost analysis
++debug system models
++debug system model
++threshold operational requirements
++threshold operational requirement

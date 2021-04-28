@@ -1,0 +1,16 @@
++goal
++in-goal area
+touch line
++flag
+dead ball line
++ball
+rugby pitch
+rugby
++throw
++kick
+rugby strip
++pass
+ruck
++player
++try
++scrum

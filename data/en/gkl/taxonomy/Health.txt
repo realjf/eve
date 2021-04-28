@@ -1,0 +1,236 @@
++aging
+clinical
+injury
+sprain
+sling
+neck brace
+fracture
+whiplash
++cut
+graze
+sunburn
++burn
++bite
+bruise
++splinter
++sting
++accident
+haemorrhage
++concussion
++emergency
++blister
+head injury
+wound
+poisoning
+electric shock
+first aid
+ointment
+plaster
+bandaid
+safety pin
+bandage
+gauze
++dressing
+resuscitation
+first aid box
+splint
+antiseptic wipe
+tweezers
++scissors
+antiseptic
++adhesive tape
++shock
++sterile
+choke
++pulse
+unconscious
+breathing
+hospital
+surgeon
+nurse
+operating room
+operating theatre
+chart
+anaesthesist
+blood test
++trolley
+emergency room
++ward
+wheelchair
+x-ray
++scan
++injection
++operation
++discharged
++visiting hours
+maternity ward
+outpatient
+intensive care unit
++private room
+children's ward
+clinic
++admitted
++department
+ENT
+cardiology
+orthopaedy
+gynaecology
+physiotherapy
+dermatology
+paediatrics
+radiology
+surgery
+maternity
+psychiatry
+ophthalmology
+neurology
+urology
++test
+pathology
++result
+oncology
+endocrinology
++consultant
+plastic surgery
++referral
+dentist
+tooth
+enamel
++gum
++nerve
++root
++premolar
++incisor
++molar
++canine
+toothache
++drill
++plaque
++decay
++filling
+dental floss
++extraction
++crown
++cavity
++check up
++apron
++probe
++reflector
++basin
+dentist's chair
++floss
++brush
++brace
+dental x-ray
+x-ray film
+dentures
+optician
++case
++glasses
++sunglasses
++lens
++frame
++cleaning fluid
++lens case
+disinfectant solution
+eye test
+eyebrow
+eyelid
+pupil
+eyelash
+iris
++retina
++lens
++cornea
+optic nerve
++vision
+astigmatism
+diopter
++long sight
++tear
++short sight
+cataract
++bifocal
+pregnancy
+nurse
++scan
+pregnancy test
+uterus
++ultrasound
+umbelical cord
+cervix
+placenta
+foetus
+ovulation
+antenatal
+womb
+dilation
++stiches
+breech
++conception
++trimester
+amniocentesis
+epidural
++delivery
++premature
+pregnant
+embryo
+episiotomy
++birth
+gynaecologist
++expectant
+amniotic fluid
+break waters
+caesarean section
+miscarriage
+obstetrician
+childbirth
++drip
++monitor
+midwife
++catheter
+induce labur
++incubator
+birth weight
+forceps
+ventouse cup
+assisted delivery
+newborn baby
++identity tag
+breast pump
+nursing bra
++pads
+breastfeed
+alternative therapy
++teacher
++massage
++shiatsu
++yoga
++mat
+chiropractic
+osteopathy
+reflexology
+meditation
++counsellor
+group therapy
+reiki
+acupuncture
+ayurveda
+hypnotherapy
+herbalism
+aromatherapy
+homeopathy
+acupressure
+psychotherapy
+crystal healing
+naturopathy
+relaxation
+stress
+hydrtherapy
+feng shui
+cancer
+mammogram
+breast cancer
+prostate cancer
+lung cancer
+mammography

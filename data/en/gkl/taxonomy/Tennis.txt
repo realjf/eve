@@ -1,0 +1,38 @@
+tennis
++handle
++head
++string
++umpire
+service line
++racquet
++ball
++whistband
++singles
++doubles
++game
++set
++match
++tiebreak
++love
++fault
++ace
++dropshot
++slice
++rally
++let
++spin
++top spin
++championship
++linesman
++baseline
++net
++ballboy
++serve
+tennis shoes
++player
++smash
++volley
++lob
++return
++backhand
++forehand

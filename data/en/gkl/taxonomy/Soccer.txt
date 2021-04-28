@@ -1,0 +1,39 @@
++football
++goalkeeper
++football strip
++footballer
+goalpost
++net
++crossbar
++dribble
++head
+free kick
+football pitch
+centre circle
++referee
++forward
+soccer
+goal line
+penalty area
+penalty
+linesman
+corner flag
++goal
++throw-in
++kick
++pass
++shoot
++save
++tackle
++stadium
++foul
++yellow card
+league
++sobstitute
+score a goal
+send off
+off-side
++draw
++red card
++extra time
++half time

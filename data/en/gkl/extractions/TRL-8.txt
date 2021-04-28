@@ -1,0 +1,26 @@
+#TRL-8
+@all
+
++form, fit, function compatible
++form, fit, function compatibility
++cost estimates
++cost estimate
++interface control process completed
++training documentation
++training documents
++training document
++maintenance documentation
++maintenance documents
++maintenance document
++final architecture diagrams
++final architecture diagram
++manufacturing process demonstrated
++manufacturing process demonstration
++functionality demonstrated
++functionality demonstration
++4-Sigma quality level
++4-Sigma
++developmental test and evaluation complete
++developmental test and evaluation completd
++full rate production
++software debugged

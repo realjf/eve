@@ -1,0 +1,42 @@
+golf
++hole
++teeing ground
++green
++bunker
++flag
++rough
++water hazard
++fairway
++swing
+golfer
+clubhouse
+golf course
++buggy
+golf ball
++glove
+golf trolley
+golf shoe
++spikes
+golf bag
++umbrella
+golf club
++wood
++putter
++iron
++wedge
++tee-off
++drive
++putt
++chip
+par
+over par
++handicap
+caddy
++stroke
+backswing
++line of play
+under par
++hole in one
++tournament
++spectators
++practice swing

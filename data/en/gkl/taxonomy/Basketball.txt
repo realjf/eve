@@ -1,0 +1,28 @@
++sideline
+basketball
++referee
++centre circle
+free-throw line
++endline
++court
++centreline
+three-point line
++ball
++net
++hoop
++number
++backboard
++foul
++throw-in
++rebound
++out of bounds
++pass
++jump ball
++throw
++catch
++shoot
++jump
++mark
++block
++bounce
++dunk

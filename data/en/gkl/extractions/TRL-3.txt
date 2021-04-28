@@ -1,0 +1,32 @@
+#TRL-3
+@all
+
++technology capability
++technology capabilities
++computer model
++computer models
++technology model
++technology models
++preliminary system performance characteristics
++elements of technology validated
++basic laboratory research
++laboratory experiment
++laboratory experiments
++requirements generation
++cross technology effect
++cross technology effects
++design technique
++design techniques
++paper study
++paper studies
++metrics established
++scaling study
++scaling studies
++manufacturing concept
++manufacturing concepts
++breadboard components
++scientific feasibility demonstrated
++risk mitigation strategy
++risk mitigation strategies
++software algorithm
++software algorithms

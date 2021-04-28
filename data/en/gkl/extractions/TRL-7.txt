@@ -1,0 +1,42 @@
+#TRL-7
+@all
+
++materials
++material
++manufacturing process
++manufacturing processes
++methods
++method
++design techniques
++design technique
++prototype
++prototypes
++soft tooling
++system interface testing
++software interface testing
++process tooling proven
++test bed
++maintainability
++reliability
++supportability
++draft design drawings
++draft design drawing
++scaling
++pre-production hardware
++production components
++production component
++design-to-cost goals
++design-to-cost goal
++initial Sigma levels
++initial Sigma level
++production planning complete
++production planning completed
++operational testing
++operational test
++flight testing
++flight test
++fully integrated prototype testing
++fully integrated prototype test
++system prototypes
++system prototype
++low rate initial production

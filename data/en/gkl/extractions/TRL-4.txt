@@ -1,0 +1,29 @@
+#TRL-4
+@all
+
++laboratory component
++laboratory components
++pre-production
++modeling and simulation
++customer requirements document
++overall system requirements
++system performance metrics
++laboratory requirements
++system breadboard
++technology functionality
++controlled laboratory environment
++initial cost drivers identified
++manufacturing processes identified
++systems engineering master plan
++low-fidelity technology integration
++mitigation strategies
++mitigation strategy
++work breakdown structure developed
++integrated product team established
++risk management program
++failure modes & effects analysis
++FMEA
++risk waterfall analysis
++technology availability dates
++draft system architecture plan
++component compatibility
